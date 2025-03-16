@@ -8,16 +8,148 @@
   <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/carousel.css">
 </head>
 
 <body>
-  <p style="font-size: 70px;">Open Sans</p>
+  <header class="container-fluid header">
+    <div class="row align-items-center">
 
+      <div class="col-12 col-md-auto text-center text-md-start">
+        <p class="brand-name">Sneakers</p>
+      </div>
+  
+      <div class="col-12 col-md-auto text-center">
+        <div class="gender-selection">
+          <a href="" class="text-decoration-none">Men</a>
+          <a href="" class="text-decoration-none">Women</a>
+        </div>
+      </div>
+  
 
+      <div class="col-md ms-md-auto"></div>
+
+      <div class="col-12 col-md-auto">
+        <div class="actions d-flex flex-wrap justify-content-center justify-content-md-end align-items-center gap-3">
+
+          <div class="position-relative search">
+            <input type="text" class="form-control rounded-pill search-bar pe-5" placeholder="Search..." aria-label="Search">
+            <button class="search-icon btn position-absolute top-50 end-0 translate-middle-y" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+            </button>
+          </div>
+  
+
+          <div class="d-flex align-items-center">
+            <a href="account.html" class="icon-link me-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+              </svg>
+            </a>
+            <a href="help" class="icon-link me-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+              </svg>
+            </a>
+            <a href="#" class="icon-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <h2 class="ms-4 my-2">Featured Shoes</h2>
+
+  <div id="featuredShoesCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#featuredShoesCarousel" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#featuredShoesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#featuredShoesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner rounded shadow">
+      <div class="carousel-item active">
+        <div class="shoe-content">
+          <div class="shoe-image">
+            <img src="img/featured-shoes/airmax-1.jpg" alt="Air Max 1" class="img-fluid">
+          </div>
+          <div class="shoe-details">
+            <p class="shoe-brand">Nike</p>
+            <h3 class="shoe-name">Air Max 1</h3>
+            <p class="mb-3">Lightweight performance running shoe with responsive cushioning and breathable mesh upper.
+            </p>
+            <p class="shoe-price">₱ 4,500 PHP</p>
+            <div>
+              <button class="btn btn-dark btn-lg me-2">Buy Now</button>
+              <button class="btn btn-outline-dark btn-lg">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="shoe-content">
+          <div class="shoe-image">
+            <img src="img/featured-shoes/ultraboost-1.avif" alt="Ultra Boost 1" class="img-fluid">
+          </div>
+          <div class="shoe-details">
+            <p class="shoe-brand">Adidas</p>
+            <h3 class="shoe-name">Ultra Boost 1</h3>
+            <p class="mb-3">Energy-returning boost midsole with Primeknit upper for a sock-like fit and premium comfort.
+            </p>
+            <p class="shoe-price">₱ 10,000 PHP</p>
+            <div>
+              <button class="btn btn-dark btn-lg me-2">Buy Now</button>
+              <button class="btn btn-outline-dark btn-lg">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="shoe-content">
+          <div class="shoe-image">
+            <img src="img/featured-shoes/suede-classic-xxi.jpg" alt="Suede Classic XXI" class="img-fluid">
+          </div>
+          <div class="shoe-details">
+            <p class="shoe-brand">Puma</p>
+            <h3 class="shoe-name">Suede Classic XXI</h3>
+            <p class="mb-3">Iconic street style with premium suede upper, padded collar and rubber outsole for traction.
+            </p>
+            <p class="shoe-price">₱ 3,000 PHP</p>
+            <div>
+              <button class="btn btn-dark btn-lg me-2">Buy Now</button>
+              <button class="btn btn-outline-dark btn-lg">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#featuredShoesCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#featuredShoesCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
 
   <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
 </body>

@@ -1,0 +1,81 @@
+.carousel-item {
+  height: 500px;
+  background-color: #f8f9fa;
+}
+
+.shoe-content {
+  display: flex;
+  height: 100%;
+  padding: 2rem;
+}
+
+.shoe-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shoe-image img {
+  max-height: 350px;
+  max-width: 100%;
+  object-fit: fill;
+}
+
+.shoe-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.shoe-brand {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #6c757d;
+}
+
+.shoe-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.shoe-price {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #212529;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.shoe-image img{
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .shoe-content {
+    flex-direction: column;
+  }
+  
+  .shoe-image, .shoe-details {
+    padding: 1rem;
+  }
+  
+  .carousel-item {
+    height: auto;
+  }
+}
